@@ -1,5 +1,5 @@
-# vagrant-base-config
-Starting point for working with vagrant boxes. Inlcudes nodejs, nginx, php5, git, and CLI for CenturyLink cloud.
+# SeedCode Starter
+Starting point for working on SeedCode projects. This includes SeedCode's dev environment.
 
 
 Core Dev Software
@@ -17,25 +17,15 @@ https://www.vagrantup.com/downloads.html
 **SourceTree:**
 https://www.sourcetreeapp.com
 
-**Squidman (proxy server):**
-http://squidman.net/squidman/
-
-**Slack:**
-http://squidman.net/squidman/
-
-**Quickcast:**
+**Quickcast (for mac):**
 http://quickcast.io
 
-**git:**
-http://git-scm.com/download/mac
-
-**nodeJS (stable version is preferred):**
-https://nodejs.org/en/
+**screencast-o-matic (for windows):**
+http://screencast-o-matic.com/home
 
 Configuration and cleanup using the terminal
 ------------
 **Launch Terminal app:**
-Switch default theme and new window theme to “Homebrew” in preferences (so you can be cool)
 
 **Create a global git ignore file:**
 ```shell
@@ -88,17 +78,12 @@ Copy the output to the clipboard starting with "ssh-rsa".
 Now navigate to kiln, click your profile and add the ssh key.
 Read more here: http://help.fogcreek.com/8153/using-kiln-with-ssh
 
-**Fix npm permissions:**
-```shell
-sudo chown -R `whoami` ~/.npm
-sudo chown -R `whoami` /usr/local/lib/node_modules
-```
+Once you have your ssh key set up for Kiln add the repo to SourceTree and pull the project.
 
 **Vagrant plugins:**
 ```shell
 vagrant plugin install vagrant-hostsupdater
 vagrant plugin install vagrant-vbguest
-vagrant plugin install vagrant-fsnotify
 ```
 
 **How to start vagrant:**
@@ -122,90 +107,12 @@ Once complete you can exit out of your vagrant ssh session by executing the comm
 exit
 ```
 
-Recommended Software
-=======================
+Vagrant can be stopped by typing
+```shell
+vagrant halt
+```
 
-The following applications are recommended but alternatives may be used
-------------
-
-**Atom:**
-https://atom.io
-
-Packages:
-git-plus,
-jshint,
-prime-file-icons,
-sync-settings
-
-Themes:
-Ui: One Dark
-syntax: afterglow-monokai-syntax
-
-**Google Chrome:**
-https://www.google.com/chrome/browser/desktop/
-
-**Firefox Developer Edition:**
-https://www.mozilla.org/en-US/firefox/developer/
-
-**Cyberduck:**
-https://cyberduck.io
-
-**Pixelmator:**
-http://www.pixelmator.com/mac/
-
-**Microsoft Remote Desktop:**
-https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=12
-
-**Dropbox:**
-https://www.dropbox.com/downloading?src=index
-
-**Xcode:**
-https://itunes.apple.com/us/app/xcode/id497799835?mt=12
-
-Software I Like
-=======================
-
-The following applications may be useful or fun
-------------
-
-**Evernote:**
-https://evernote.com
-
-**VLC:**
-http://www.videolan.org/vlc/
-
-**Spotify:**
-https://www.spotify.com
-
-**Limechat:**
-http://limechat.net
-
-**TeamViewer:**
-http://www.teamviewer.com
-
-**The Unarchiver**
-http://unarchiver.c3.cx/unarchiver
-
-Hobby Apps
-=======================
-
-The following applications are not used for work
-------------
-
-**Audacity:**
-http://www.audacityteam.org/download/mac
-
-**Transmission:**
-http://www.transmissionbt.com
-
-**SDFormatter:**
-https://www.sdcard.org/downloads/formatter_4/
-
-**RPi-sd card builder:**
-https://alltheware.wordpress.com/2012/12/11/easiest-way-sd-card-setup/
-
-**ECM:**
-https://itunes.apple.com/us/app/ecm/id490370398?mt=12
-
-**Wifi Scanner:**
-https://itunes.apple.com/us/app/wifi-scanner/id411680127?mt=12
+To start vagrant again (and the dev environment) simply navigate to the vagrant folder in the terminal and type
+```shell
+vagrant up
+```
