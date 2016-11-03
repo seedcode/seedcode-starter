@@ -62,23 +62,7 @@ nano ~/.gitconfig
 
 Fill in name and email. When done "ctrl" + "x" to exit, then “y” to save and "enter" to confirm.
 
-**Enable ssh connections for kiln:**
-```shell
-ssh-keygen -t rsa
-```
-
-At the prompt do not enter anything for file and password, just press "enter"
-
-```shell
-cat ~/.ssh/id_rsa.pub
-```
-
-Copy the output to the clipboard starting with "ssh-rsa".
-
-Now navigate to kiln, click your profile and add the ssh key.
-Read more here: http://help.fogcreek.com/8153/using-kiln-with-ssh
-
-Once you have your ssh key set up for Kiln add the repo to SourceTree and pull the project:
+Once you have the project repo URL from Kiln add the repo to SourceTree and pull the project:
 
 Click "New Repository"
 
