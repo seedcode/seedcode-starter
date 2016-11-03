@@ -80,6 +80,14 @@ Read more here: http://help.fogcreek.com/8153/using-kiln-with-ssh
 
 Once you have your ssh key set up for Kiln add the repo to SourceTree and pull the project.
 
+Click "New Repository"
+
+Then "Clone from URL"
+
+Paste in the repo URL and choose a folder on your computer to clone the repo to
+
+Then click "Clone"
+
 **Vagrant plugins:**
 ```shell
 vagrant plugin install vagrant-hostsupdater
