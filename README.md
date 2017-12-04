@@ -17,11 +17,8 @@ https://www.vagrantup.com/downloads.html
 **SourceTree:**
 https://www.sourcetreeapp.com
 
-**Quickcast (for mac):**
-http://quickcast.io
-
-**screencast-o-matic (for windows):**
-http://screencast-o-matic.com/home
+**MonoSnap (for screencasts):**
+https://www.monosnap.com
 
 Configuration and cleanup using the terminal
 ------------
